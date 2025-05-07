@@ -59,6 +59,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instancia.EstadoActual == EstadosDelJuego.Inicio ||
+            GameManager.Instancia.EstadoActual == EstadosDelJuego.GameOver)
+        {
+            return;
+        }
+
+
         DetectarInput();
         ControlarCarriles(); 
         CalcularMovimientoVertical();
@@ -255,5 +262,20 @@ public class PlayerController : MonoBehaviour
 
             carrilActual = Mathf.Clamp(carrilActual, -1, 1);
        
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.collider.CompareTag("Obstaculo"))
+        {
+            if (GameManager.Instancia.EstadoActual == EstadosDelJuego.GameOver)
+            {
+                return;
+            }
+
+            playerAnimaciones.MostrarAnimacionColision();
+            GameManager.Instancia.CambiarEstado(EstadosDelJuego.GameOver);
+          
+        }
     }
 }
