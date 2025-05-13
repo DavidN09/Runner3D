@@ -277,5 +277,26 @@ public class PlayerController : MonoBehaviour
             GameManager.Instancia.CambiarEstado(EstadosDelJuego.GameOver);
           
         }
+
+        
+
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Salto"))
+        {
+            posicionVertical = valorSalto;
+            EstaSaltando = true;
+            playerAnimaciones.MostrarAnimacionSaltar();
+
+            if (coroutineDeslizar != null)
+            {
+                StopCoroutine(coroutineDeslizar);
+                EstaDeslizando = false;
+                ModificarColliderDesllizar(false);
+            }
+        }
+    }
+
 }
