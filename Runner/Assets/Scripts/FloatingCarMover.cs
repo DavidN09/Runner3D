@@ -19,7 +19,7 @@ public class FloatingCarMover : MonoBehaviour
 
         if (Vector3.Distance(transform.position, target) < 0.1f)
         {
-            Destroy(gameObject); // Destruir cuando llegue al destino
+            Destroy(gameObject);
         }
     }
 }
