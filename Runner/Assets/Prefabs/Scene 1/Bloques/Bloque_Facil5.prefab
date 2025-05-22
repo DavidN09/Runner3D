@@ -82,7 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5879590974928999299}
   m_Layer: 0
-  m_Name: Bloque_Simple
+  m_Name: Bloque_Facil5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
