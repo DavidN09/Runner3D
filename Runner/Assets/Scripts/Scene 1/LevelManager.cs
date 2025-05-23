@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
 
     [Header("Bloques")]
     [SerializeField] private Bloque bloqueInicial;
+    [SerializeField] private int longitudBloqueNormal = 40;
+    [SerializeField] private int longitudBloqueTrenes = 80;
     [SerializeField] private Bloque[] bloquesPrefab;
 
     private List<Bloque> listtaBloquesFaciles = new List<Bloque>();
@@ -31,15 +33,66 @@ public class LevelManager : MonoBehaviour
     {
         LLenarBloquesSegunTipo();
         ultimoBloque = bloqueInicial;
+
+        for (int i = 0; i < bloquesAlInicio; i++)
+        {
+            CrearBloque();
+        }
+    }
+
+
+
+    private void CrearBloque()
+    {
+        if (bloquesCreados >= maxBloquesParaTrenes)
+        {
+            if (bloquesCreados < maxBloquesParaTrenes + 1)
+            {
+                AñadirBloque(TipoBloque.Trenes, longitudBloqueNormal);
+            }
+            else
+            {
+                AñadirBloque(TipoBloque.Trenes, longitudBloqueTrenes);
+            }
+
+            if (bloquesCreados == maxBloquesParaTrenes + maxBloquesTrenesReset)
+            {
+                bloquesCreados = 0;
+            }
+        }
+        else if (bloquesCreados >= maxBloquesParaDificil)
+        {
+            AñadirBloque(TipoBloque.Dificil, longitudBloqueNormal);
+        }
+        else
+        {
+            if (ultimoBloque.TipoDeBloque == TipoBloque.Trenes)
+            {
+                AñadirBloque(TipoBloque.Facil, longitudBloqueTrenes);
+            }
+            else
+            {
+                AñadirBloque(TipoBloque.Facil, longitudBloqueNormal);
+            }
+        }
+        
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            Bloque bloque = ObtenerBloqueSegunTipo(TipoBloque.Facil);
-            bloque.transform.position = bloqueInicial.transform.position + Vector3.forward * 40f;
+            CrearBloque();
         }
+    }
+
+
+    private void AñadirBloque(TipoBloque tipo, float longitud)
+    {
+        Bloque nuevoBloque = ObtenerBloqueSegunTipo(tipo);
+        nuevoBloque.transform.position = EstablecerPosNuevoBloque(longitud);
+        ultimoBloque = nuevoBloque;
+        bloquesCreados++;
     }
 
     private Bloque ObtenerBloqueSegunTipo(TipoBloque tipo)
@@ -76,6 +129,10 @@ public class LevelManager : MonoBehaviour
         return bloque;
     }
 
+    private Vector3 EstablecerPosNuevoBloque(float longitud)
+    {
+        return ultimoBloque.transform.position + Vector3.forward * longitud;
+    }
     private void LLenarBloquesSegunTipo()
     {
         foreach (Bloque bloque in bloquesPrefab)
