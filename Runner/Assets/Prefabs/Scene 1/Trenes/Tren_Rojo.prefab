@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3199940554025479607}
+  - component: {fileID: -1139096555341791084}
   m_Layer: 0
   m_Name: Tren_Rojo
   m_TagString: Untagged
@@ -34,6 +35,18 @@ Transform:
   - {fileID: 5707876378581728416}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1139096555341791084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068974805802253336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2758cb490e020bd4bae06b3c2addc72d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5713575497471394227
 GameObject:
   m_ObjectHideFlags: 0

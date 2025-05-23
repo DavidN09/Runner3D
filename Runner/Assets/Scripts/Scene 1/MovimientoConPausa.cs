@@ -11,7 +11,7 @@ public class MovimientoConPausa : MonoBehaviour
     private Vector3 puntoA;
     private Vector3 puntoB;
     private bool moviendoAHaciaB = true;
-    private bool enEspera = false;
+
 
     void Start()
     {

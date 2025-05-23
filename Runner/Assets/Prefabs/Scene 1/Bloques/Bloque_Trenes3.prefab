@@ -376,6 +376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3281274657932530347}
+  - component: {fileID: -3452683563400236448}
   m_Layer: 0
   m_Name: Bloque_Trenes3
   m_TagString: Untagged
@@ -409,6 +410,23 @@ Transform:
   - {fileID: 2786526447091991103}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3452683563400236448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344679225970135041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53ddad49c999a74aabdc9426fa79437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoBloque: 2
+  trenes:
+  - {fileID: 1111727791120572604}
+  - {fileID: 2471920365051008347}
+  - {fileID: 6721728625738269895}
 --- !u!1 &8515626496962236939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,6 +1214,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tren_Verde
       objectReference: {fileID: 0}
+    - target: {fileID: 947881217113615468, guid: 6f03f3d2caab68649821c5f19151d8ca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7452096967554425563, guid: 6f03f3d2caab68649821c5f19151d8ca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1251,6 +1274,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f03f3d2caab68649821c5f19151d8ca, type: 3}
+--- !u!114 &1111727791120572604 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -7167213627638094813, guid: 6f03f3d2caab68649821c5f19151d8ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1433648422365234335}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2758cb490e020bd4bae06b3c2addc72d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8398787869027198532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7452096967554425563, guid: 6f03f3d2caab68649821c5f19151d8ca,
@@ -3712,6 +3747,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tren_Verde (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 947881217113615468, guid: 6f03f3d2caab68649821c5f19151d8ca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7452096967554425563, guid: 6f03f3d2caab68649821c5f19151d8ca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3767,6 +3807,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f03f3d2caab68649821c5f19151d8ca, type: 3}
+--- !u!114 &2471920365051008347 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -7167213627638094813, guid: 6f03f3d2caab68649821c5f19151d8ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 4523574817913418104}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2758cb490e020bd4bae06b3c2addc72d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6462065003053274019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7452096967554425563, guid: 6f03f3d2caab68649821c5f19151d8ca,
@@ -3860,6 +3912,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tren_Verde (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 947881217113615468, guid: 6f03f3d2caab68649821c5f19151d8ca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7452096967554425563, guid: 6f03f3d2caab68649821c5f19151d8ca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3921,6 +3978,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4737947060655792356}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6721728625738269895 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -7167213627638094813, guid: 6f03f3d2caab68649821c5f19151d8ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 4737947060655792356}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2758cb490e020bd4bae06b3c2addc72d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4826133674767462095
 PrefabInstance:
   m_ObjectHideFlags: 0

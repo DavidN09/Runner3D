@@ -308,6 +308,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1135667226147372262}
+  - component: {fileID: 8375333692244772495}
   m_Layer: 0
   m_Name: Bloque_Dificil2
   m_TagString: Untagged
@@ -338,6 +339,19 @@ Transform:
   - {fileID: 8350721241014587007}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8375333692244772495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5907012621743816367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53ddad49c999a74aabdc9426fa79437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoBloque: 1
 --- !u!1 &6658278821805395792
 GameObject:
   m_ObjectHideFlags: 0

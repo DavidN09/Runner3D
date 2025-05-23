@@ -340,6 +340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5266024538311646335}
+  - component: {fileID: -1395760956852545374}
   m_Layer: 0
   m_Name: Bloque_Trenes2
   m_TagString: Untagged
@@ -373,6 +374,23 @@ Transform:
   - {fileID: 4194272229531541348}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1395760956852545374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5732590164852656408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53ddad49c999a74aabdc9426fa79437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoBloque: 2
+  trenes:
+  - {fileID: 8272547158847606655}
+  - {fileID: 7720587056073467136}
+  - {fileID: 7380389423176102471}
 --- !u!1 &6090151063118142345
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +622,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tren_Rojo
       objectReference: {fileID: 0}
+    - target: {fileID: 3068974805802253336, guid: 57dcded9f69a3ec4180b2ed9b9d6a2cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3199940554025479607, guid: 57dcded9f69a3ec4180b2ed9b9d6a2cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -665,6 +688,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 215293690140954603}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8272547158847606655 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -1139096555341791084, guid: 57dcded9f69a3ec4180b2ed9b9d6a2cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 215293690140954603}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2758cb490e020bd4bae06b3c2addc72d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &225282800903793841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1566,6 +1601,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tren_Rojo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3068974805802253336, guid: 57dcded9f69a3ec4180b2ed9b9d6a2cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3199940554025479607, guid: 57dcded9f69a3ec4180b2ed9b9d6a2cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1627,6 +1667,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1611572489485120211}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7380389423176102471 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -1139096555341791084, guid: 57dcded9f69a3ec4180b2ed9b9d6a2cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1611572489485120211}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2758cb490e020bd4bae06b3c2addc72d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1646834790257649118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1862,6 +1914,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tren_Rojo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3068974805802253336, guid: 57dcded9f69a3ec4180b2ed9b9d6a2cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3199940554025479607, guid: 57dcded9f69a3ec4180b2ed9b9d6a2cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1923,6 +1980,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1951207295229076884}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7720587056073467136 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -1139096555341791084, guid: 57dcded9f69a3ec4180b2ed9b9d6a2cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1951207295229076884}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2758cb490e020bd4bae06b3c2addc72d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2128356491496149347
 PrefabInstance:
   m_ObjectHideFlags: 0
