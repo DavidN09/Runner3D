@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8389376886216723245}
   - component: {fileID: 7650321166210452959}
   - component: {fileID: 6178915128723966059}
+  - component: {fileID: 1489428144711661450}
   m_Layer: 0
   m_Name: Barrera
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,3 +84,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1489428144711661450
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8577980382792427141}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1143615474755829556, guid: 36a75e11c9f6f4032a59f1c5e5203bc2, type: 3}

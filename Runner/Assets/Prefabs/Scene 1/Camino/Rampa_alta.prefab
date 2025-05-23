@@ -16,7 +16,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5dfc750e6d43c8d4eb9d2cb1ca7ad35d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.51
+      value: 2.66
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5dfc750e6d43c8d4eb9d2cb1ca7ad35d,
         type: 3}

@@ -152,6 +152,19 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    private void RespuestaNuevoBloque()
+    {
+        CrearBloque();
+    }
 
+    private void OnEnable()
+    {
+        Limite.EventoNuevoBloque += RespuestaNuevoBloque;
+    }
+
+    private void OnDisable()
+    {
+        Limite.EventoNuevoBloque -= RespuestaNuevoBloque;
+    }
 
 }

@@ -377,9 +377,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3281274657932530347}
   - component: {fileID: -3452683563400236448}
+  - component: {fileID: -8249775627753732846}
   m_Layer: 0
   m_Name: Bloque_Trenes3
-  m_TagString: Untagged
+  m_TagString: Bloque
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -427,6 +428,27 @@ MonoBehaviour:
   - {fileID: 1111727791120572604}
   - {fileID: 2471920365051008347}
   - {fileID: 6721728625738269895}
+--- !u!65 &-8249775627753732846
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344679225970135041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 24.414574, y: 22.868204, z: 80.084946}
+  m_Center: {x: -0.045553207, y: 11.398831, z: 35.03488}
 --- !u!1 &8515626496962236939
 GameObject:
   m_ObjectHideFlags: 0
@@ -6297,6 +6319,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3281274657932530347}
     m_Modifications:
+    - target: {fileID: -7768726319094738620, guid: cbc81c766336fc545bee4b1c8a622e7f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7768726319094738620, guid: cbc81c766336fc545bee4b1c8a622e7f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7768726319094738620, guid: cbc81c766336fc545bee4b1c8a622e7f,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7768726319094738620, guid: cbc81c766336fc545bee4b1c8a622e7f,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7768726319094738620, guid: cbc81c766336fc545bee4b1c8a622e7f,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7768726319094738620, guid: cbc81c766336fc545bee4b1c8a622e7f,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7768726319094738620, guid: cbc81c766336fc545bee4b1c8a622e7f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4806736879946847366, guid: cbc81c766336fc545bee4b1c8a622e7f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6351,6 +6408,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bloque_Facil2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064976045584469899, guid: cbc81c766336fc545bee4b1c8a622e7f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

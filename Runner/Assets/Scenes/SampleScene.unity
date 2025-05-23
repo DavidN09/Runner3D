@@ -198,6 +198,39 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8234365822766116693}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &126522399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126522400}
+  m_Layer: 0
+  m_Name: Camara
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &126522400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126522399}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.77, z: 2.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 330585546}
+  - {fileID: 539761564}
+  m_Father: {fileID: 1703289008}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &159751522 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ef7a3c48c6ee0044bbef56474d4157b3,
@@ -320,13 +353,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21340835, y: 0.010444279, z: 0.008923555, w: 0.97686654}
-  m_LocalPosition: {x: 0, y: 7.52, z: -7.56}
-  m_LocalScale: {x: 29.6, y: 0.24000001, z: -0.8300001}
+  m_LocalRotation: {x: 0.1452197, y: 0, z: 0, w: 0.98939943}
+  m_LocalPosition: {x: 0, y: 3.8, z: -8.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1703289008}
-  m_LocalEulerAnglesHint: {x: 24.63, y: 1.526, z: 1.38}
+  m_Father: {fileID: 126522400}
+  m_LocalEulerAnglesHint: {x: 16.7, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -595,6 +628,100 @@ Transform:
   - {fileID: 543393142}
   m_Father: {fileID: 1681039648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &539761563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 539761564}
+  - component: {fileID: 539761565}
+  - component: {fileID: 539761566}
+  - component: {fileID: 539761567}
+  m_Layer: 0
+  m_Name: Limite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &539761564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539761563}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 10, z: -90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 126522400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &539761565
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539761563}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 30, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &539761566
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539761563}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 1
+--- !u!114 &539761567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539761563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be54d6ecc5bc2e647b5717f7e00fd24a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &543393141
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,11 +852,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 400000, guid: e4299bf26a09e9049839e1a1b75e562c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 330585546}
+      addedObject: {fileID: 1681039648}
     - targetCorrespondingSourceObject: {fileID: 400000, guid: e4299bf26a09e9049839e1a1b75e562c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1681039648}
+      addedObject: {fileID: 126522400}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: e4299bf26a09e9049839e1a1b75e562c,
         type: 3}
@@ -820,10 +947,13 @@ MonoBehaviour:
   maxBloquesParaTrenes: 10
   maxBloquesTrenesReset: 2
   bloqueInicial: {fileID: 5566778842949762359}
+  longitudBloqueNormal: 40
+  longitudBloqueTrenes: 80
   bloquesPrefab:
   - {fileID: -7838485209270413744, guid: ec4c1bf13499e7b4a85997412fb606e2, type: 3}
   - {fileID: 8375333692244772495, guid: d798d8a5d5862ba4f858805f7d3203f5, type: 3}
   - {fileID: -8850359250312885923, guid: 861c674716519b849a93be0f2520bdf5, type: 3}
+  - {fileID: -7838485209270413744, guid: a360dece77f57ff47b72c5c9a4e80d5a, type: 3}
   - {fileID: 6046504967194620761, guid: 06bd44d8cc710f7478c0ce95278d62c4, type: 3}
   - {fileID: 3266127845894598915, guid: cbc81c766336fc545bee4b1c8a622e7f, type: 3}
   - {fileID: -5815880979569354537, guid: 1d945a1ceef79d44ca14bf7cf6b555c1, type: 3}
@@ -864,6 +994,7 @@ MonoBehaviour:
   - {fileID: 4271778726734877289, guid: ec4c1bf13499e7b4a85997412fb606e2, type: 3}
   - {fileID: 5907012621743816367, guid: d798d8a5d5862ba4f858805f7d3203f5, type: 3}
   - {fileID: 4538306519259715337, guid: 861c674716519b849a93be0f2520bdf5, type: 3}
+  - {fileID: 4271778726734877289, guid: a360dece77f57ff47b72c5c9a4e80d5a, type: 3}
   - {fileID: 1675317867221686993, guid: 06bd44d8cc710f7478c0ce95278d62c4, type: 3}
   - {fileID: 5064976045584469899, guid: cbc81c766336fc545bee4b1c8a622e7f, type: 3}
   - {fileID: 5605936665971416517, guid: 1d945a1ceef79d44ca14bf7cf6b555c1, type: 3}
@@ -1826,7 +1957,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1681039648
 Transform:
   m_ObjectHideFlags: 0
@@ -1867,11 +1998,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 952e77ad973c722419a5f9917c422904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 2
-  valorSalto: 15
+  velocidadMovimiento: 5
+  valorSalto: 10
   gravedad: 20
-  posicionCarrilIzquierdo: -3.1
-  posicionCarrilDerecho: 3.1
+  posicionCarrilIzquierdo: -2.65
+  posicionCarrilDerecho: 2.65
 --- !u!143 &1703289000
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3457,9 +3588,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5566778842949762358}
   - component: {fileID: 5566778842949762359}
+  - component: {fileID: 5566778842949762360}
   m_Layer: 0
   m_Name: Bloque_Inicial
-  m_TagString: Untagged
+  m_TagString: Bloque
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5644,6 +5776,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tipoBloque: 0
   trenes: []
+--- !u!65 &5566778842949762360
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675317866022185452}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 24.414574, y: 22.868204, z: 40.043972}
+  m_Center: {x: -0.045553207, y: 11.398831, z: 15.014399}
 --- !u!1001 &5657257788740206204
 PrefabInstance:
   m_ObjectHideFlags: 0

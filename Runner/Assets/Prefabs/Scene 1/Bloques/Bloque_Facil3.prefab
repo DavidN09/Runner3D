@@ -305,9 +305,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8207534515877103739}
   - component: {fileID: -5815880979569354537}
+  - component: {fileID: 3484755223568550866}
   m_Layer: 0
   m_Name: Bloque_Facil3
-  m_TagString: Untagged
+  m_TagString: Bloque
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,6 +348,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f53ddad49c999a74aabdc9426fa79437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipoBloque: 0
+  trenes: []
+--- !u!65 &3484755223568550866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5605936665971416517}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 24.414574, y: 22.868204, z: 40.043972}
+  m_Center: {x: -0.045553207, y: 11.398831, z: 15.014399}
 --- !u!1 &6380669696093321886
 GameObject:
   m_ObjectHideFlags: 0
