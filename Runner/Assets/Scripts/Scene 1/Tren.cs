@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Tren : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float velocidad;
 
-    // Update is called once per frame
+    public bool PuedeMoverse { get; set; }
+    public PlayerController Player { get; set; }
     void Update()
     {
-        
+        if (PuedeMoverse)
+        {
+            transform.Translate(Vector3.forward * -velocidad * Time.deltaTime);
+            if (transform.position.z + 40 < Player.transform.position.z)
+            {
+                PuedeMoverse = false;
+            }
+        }
     }
 }

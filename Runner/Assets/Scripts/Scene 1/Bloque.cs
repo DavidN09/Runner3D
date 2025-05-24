@@ -20,6 +20,8 @@ public class Bloque : MonoBehaviour
 
     public TipoBloque TipoDeBloque => tipoBloque;
 
+
+    private Tren trenSeleccionado;
     public void InicializarBloque()
     {
         if (tipoBloque == TipoBloque.Trenes)
@@ -36,5 +38,18 @@ public class Bloque : MonoBehaviour
         }
         int index = Random.Range(0, trenes.Length);
         trenes[index].gameObject.SetActive(true);
+        trenSeleccionado = trenes[index];
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (trenSeleccionado != null)
+            {
+                trenSeleccionado.PuedeMoverse = true;
+                trenSeleccionado.Player = other.GetComponent<PlayerController>();
+            }
+        }
     }
 }
