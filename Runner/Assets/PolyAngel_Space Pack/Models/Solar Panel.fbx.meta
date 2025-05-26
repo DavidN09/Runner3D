@@ -10,8 +10,8 @@ ModelImporter:
       name: PA_SpacePack
     second: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   materials:
-    materialImportMode: 1
-    materialName: 1
+    materialImportMode: 2
+    materialName: 2
     materialSearch: 0
     materialLocation: 0
   animations:
