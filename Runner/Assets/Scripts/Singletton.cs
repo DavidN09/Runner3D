@@ -23,7 +23,7 @@ public class Singletton<T> : MonoBehaviour where T: Component
         }
     }
 
-    private void Awake()
+    protected virtual void Awake()
     {
         instancia = this as T;
     }

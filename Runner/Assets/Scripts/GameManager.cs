@@ -14,7 +14,7 @@ public class GameManager : Singletton<GameManager>
 {
    
     public EstadosDelJuego EstadoActual { get; set; }
-
+    public int DiamantesObtenidosEnEsteNivel { get; set; }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))

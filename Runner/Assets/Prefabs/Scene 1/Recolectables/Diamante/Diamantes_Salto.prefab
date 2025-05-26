@@ -1,0 +1,558 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7725274675553467712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5137574879216216109}
+  m_Layer: 0
+  m_Name: Diamantes_Salto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5137574879216216109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725274675553467712}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 580647610656712108}
+  - {fileID: 7647360614618313767}
+  - {fileID: 5527182906161763112}
+  - {fileID: 6501078908085464888}
+  - {fileID: 7460286354135606501}
+  - {fileID: 2345643476790706640}
+  - {fileID: 5471902514882877449}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &688833969392746431
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5137574879216216109}
+    m_Modifications:
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777492812635521193, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_Name
+      value: Diamante
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d963e3ef931f23048b35a8d3a365bb76, type: 3}
+--- !u!4 &580647610656712108 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+    type: 3}
+  m_PrefabInstance: {fileID: 688833969392746431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2381422772282563523
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5137574879216216109}
+    m_Modifications:
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.9899998
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777492812635521193, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_Name
+      value: Diamante (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d963e3ef931f23048b35a8d3a365bb76, type: 3}
+--- !u!4 &2345643476790706640 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+    type: 3}
+  m_PrefabInstance: {fileID: 2381422772282563523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5364349470883840538
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5137574879216216109}
+    m_Modifications:
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.0100002
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777492812635521193, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_Name
+      value: Diamante (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d963e3ef931f23048b35a8d3a365bb76, type: 3}
+--- !u!4 &5471902514882877449 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+    type: 3}
+  m_PrefabInstance: {fileID: 5364349470883840538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5563522949092018491
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5137574879216216109}
+    m_Modifications:
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7600002
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777492812635521193, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_Name
+      value: Diamante (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d963e3ef931f23048b35a8d3a365bb76, type: 3}
+--- !u!4 &5527182906161763112 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+    type: 3}
+  m_PrefabInstance: {fileID: 5563522949092018491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6609487539428980011
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5137574879216216109}
+    m_Modifications:
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.4899998
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777492812635521193, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_Name
+      value: Diamante (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d963e3ef931f23048b35a8d3a365bb76, type: 3}
+--- !u!4 &6501078908085464888 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+    type: 3}
+  m_PrefabInstance: {fileID: 6609487539428980011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7352592435208093430
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5137574879216216109}
+    m_Modifications:
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.5100002
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777492812635521193, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_Name
+      value: Diamante (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d963e3ef931f23048b35a8d3a365bb76, type: 3}
+--- !u!4 &7460286354135606501 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+    type: 3}
+  m_PrefabInstance: {fileID: 7352592435208093430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7755485267760000564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5137574879216216109}
+    m_Modifications:
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7399998
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777492812635521193, guid: d963e3ef931f23048b35a8d3a365bb76,
+        type: 3}
+      propertyPath: m_Name
+      value: Diamante (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d963e3ef931f23048b35a8d3a365bb76, type: 3}
+--- !u!4 &7647360614618313767 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 108619880122489363, guid: d963e3ef931f23048b35a8d3a365bb76,
+    type: 3}
+  m_PrefabInstance: {fileID: 7755485267760000564}
+  m_PrefabAsset: {fileID: 0}
