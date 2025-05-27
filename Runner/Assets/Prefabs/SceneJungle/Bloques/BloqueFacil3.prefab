@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: -316815831293290931}
   m_Layer: 0
   m_Name: BloqueFacil3
-  m_TagString: Untagged
+  m_TagString: Bloque
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
