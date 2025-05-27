@@ -38279,7 +38279,7 @@ GameObject:
   - component: {fileID: -8778866391833407354}
   m_Layer: 0
   m_Name: bloque6_dificil
-  m_TagString: Untagged
+  m_TagString: Bloque
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

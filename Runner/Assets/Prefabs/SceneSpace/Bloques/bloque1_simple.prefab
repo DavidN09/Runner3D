@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 2650936532669468642}
   m_Layer: 0
   m_Name: bloque1_simple
-  m_TagString: Untagged
+  m_TagString: Bloque
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

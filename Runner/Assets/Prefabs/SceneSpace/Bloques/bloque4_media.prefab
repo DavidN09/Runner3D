@@ -13,6 +13,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bloque4_media
       objectReference: {fileID: 0}
+    - target: {fileID: 658706011933382414, guid: 2543837813db31f4f9eef378e597d491,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bloque
+      objectReference: {fileID: 0}
     - target: {fileID: 928987072256826917, guid: 2543837813db31f4f9eef378e597d491,
         type: 3}
       propertyPath: m_IsActive
