@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.4528302, g: 0.20291919, b: 0.20291919, a: 1}
-  m_FogMode: 1
-  m_FogDensity: 0.03
+  m_FogMode: 2
+  m_FogDensity: 0.02
   m_LinearFogStart: 1
   m_LinearFogEnd: 40
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: b4f152e0498484391a9f0d5a1facf03b, type: 2}
   m_HaloStrength: 0.541
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.015430791, g: 0.009246423, b: 0.014405392, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -817,6 +817,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28ed421ca8659d144a858468ae12b0f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diamantesNecesarios: 100
+  siguienteNivel: 
   bloquesAlInicio: 2
   maxBloquesParaDificil: 2
   maxBloquesParaEspecial: 3
@@ -1035,6 +1037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62263999c3d33049a7dd4e904205a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resultadosPorNivel: []
   velocidadMundo: 5
   multiplicadorPuntajePorMoneda: 10
 --- !u!4 &1013933265
