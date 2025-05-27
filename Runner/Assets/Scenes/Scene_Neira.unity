@@ -191,14 +191,16 @@ PrefabInstance:
     - {fileID: 5860071433088300337, guid: 59750a7cd2ebe8a49adce1db400efeb0, type: 3}
     - {fileID: 8681950205270093850, guid: 59750a7cd2ebe8a49adce1db400efeb0, type: 3}
     - {fileID: 8412037837497858747, guid: 59750a7cd2ebe8a49adce1db400efeb0, type: 3}
+    - {fileID: 1946849498855846437, guid: 59750a7cd2ebe8a49adce1db400efeb0, type: 3}
+    - {fileID: 8377082045394909628, guid: 59750a7cd2ebe8a49adce1db400efeb0, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8035701960243261047, guid: 59750a7cd2ebe8a49adce1db400efeb0,
         type: 3}
-      insertIndex: 57
+      insertIndex: 55
       addedObject: {fileID: 1830584410}
     - targetCorrespondingSourceObject: {fileID: 8035701960243261047, guid: 59750a7cd2ebe8a49adce1db400efeb0,
         type: 3}
-      insertIndex: 60
+      insertIndex: 58
       addedObject: {fileID: 1480935392}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59750a7cd2ebe8a49adce1db400efeb0, type: 3}
@@ -1080,6 +1082,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62263999c3d33049a7dd4e904205a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidadMundo: 5
+  multiplicadorPuntajePorMoneda: 10
 --- !u!4 &1013933265
 Transform:
   m_ObjectHideFlags: 0
