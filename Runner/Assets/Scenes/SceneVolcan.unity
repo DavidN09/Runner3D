@@ -817,8 +817,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28ed421ca8659d144a858468ae12b0f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diamantesNecesarios: 100
-  siguienteNivel: 
+  diamantesNecesarios: 10
+  siguienteNivel: Scene_Neira
   bloquesAlInicio: 2
   maxBloquesParaDificil: 2
   maxBloquesParaEspecial: 3
