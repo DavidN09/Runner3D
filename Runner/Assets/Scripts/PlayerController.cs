@@ -253,7 +253,7 @@ public class PlayerController : MonoBehaviour
             direccionInput = DireccionesInput.Abajo;
 
         }
-        else if (Input.GetKeyDown(KeyCode.W))
+        else if (Input.GetKeyDown(KeyCode.Space))
         {
             direccionInput = DireccionesInput.Arriba;
 
