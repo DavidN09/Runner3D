@@ -713,6 +713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def07c15155c101499959fb1f7ba295a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  duracion: 10
 --- !u!65 &373705599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -728,7 +729,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1292,10 +1293,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: e4299bf26a09e9049839e1a1b75e562c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1703289003}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: e4299bf26a09e9049839e1a1b75e562c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1703289000}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: e4299bf26a09e9049839e1a1b75e562c,
         type: 3}
@@ -1452,11 +1449,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloquesAlInicio: 5
   maxBloquesParaDificil: 5
-  maxBloquesParaTrenes: 10
-  maxBloquesTrenesReset: 3
+  maxBloquesParaEspecial: 10
+  maxBloquesEspecialReset: 3
   bloqueInicial: {fileID: 5566778842949762359}
   longitudBloqueNormal: 40
-  longitudBloqueTrenes: 80
+  longitudBloqueEspecial: 80
   bloquesPrefab:
   - {fileID: -7838485209270413744, guid: ec4c1bf13499e7b4a85997412fb606e2, type: 3}
   - {fileID: 8375333692244772495, guid: d798d8a5d5862ba4f858805f7d3203f5, type: 3}
@@ -2717,33 +2714,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.75, z: 0}
---- !u!54 &1703289003
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703288998}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 1
 --- !u!114 &1703289006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3242,7 +3212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -19.1}
+  m_AnchoredPosition: {x: 0, y: -19.099976}
   m_SizeDelta: {x: 361.56628, y: 163.79102}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &2123202272
@@ -6653,7 +6623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipoBloque: 0
-  trenes: []
+  ObjEspeciales: []
   diamantes: []
 --- !u!65 &5566778842949762360
 BoxCollider:

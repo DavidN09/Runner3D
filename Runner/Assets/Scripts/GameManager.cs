@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,8 @@ public enum EstadosDelJuego
 
 public class GameManager : Singletton<GameManager>
 {
+
+    public static event Action EventoImanFinalizado;
 
     [SerializeField] private int velocidadMundo = 5;
     [SerializeField] private int multiplicadorPuntajePorMoneda = 10;
@@ -62,5 +65,28 @@ public class GameManager : Singletton<GameManager>
     {
         yield return new WaitForSeconds(tiempo);
         valorMultiplicador = 1;
+    }
+
+    private IEnumerator COImanConteo(float tiempo)
+    {
+        yield return new WaitForSeconds(tiempo);
+        EventoImanFinalizado?.Invoke();
+        
+    }
+
+    private void RespuestaEventoIman(float duracion)
+    {
+        StartCoroutine(COImanConteo(duracion));
+    }
+
+    private void OnEnable()
+    {
+        Potenciadoriman.EventoIman += RespuestaEventoIman;
+    }
+
+    private void OnDisable()
+    {
+        Potenciadoriman.EventoIman -= RespuestaEventoIman;
+
     }
 }

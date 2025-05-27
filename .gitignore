@@ -74,3 +74,10 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Runner.zip
+Runner/Assets/Prefabs/SceneSpace/Bloques/Bloque5_dificil.prefab
+Runner/Assets/Prefabs/SceneSpace/Bloques/Bloque5_dificil.prefab.meta
+Runner/Assets/Prefabs/SceneSpace/Bloques/Bloque5_dificil.prefab.meta
+Runner/Assets/Prefabs/SceneSpace/Objetos/barrierCement (2) Variant.prefab
+Runner/Assets/Prefabs/SceneSpace/Objetos/barrierCement (2) Variant.prefab.meta
+Runner/Assets/Prefabs/SceneSpace/Objetos/obstacle flamethrower (1) Variant.prefab
+Runner/Assets/Prefabs/SceneSpace/Objetos/obstacle flamethrower (1) Variant.prefab.meta

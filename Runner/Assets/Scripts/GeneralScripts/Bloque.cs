@@ -21,6 +21,11 @@ public class Bloque : MonoBehaviour
     [Header("Diamantes")]
     [SerializeField] private GameObject[] diamantes;
 
+    [Header("Potenciadores")]
+    [SerializeField] private float probabilidadMinima;
+    [SerializeField] private GameObject[] potenciadores;
+    
+
     public TipoBloque TipoDeBloque => tipoBloque;
 
     private List<GameObject> diamantesLista = new List<GameObject>();
@@ -36,6 +41,26 @@ public class Bloque : MonoBehaviour
 
         obtenerDiamantes();
         ActivarDiamantes();
+        SeleccionarPotenciador();
+    }
+
+    private void SeleccionarPotenciador()
+    {
+        if (potenciadores == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < potenciadores.Length; i++)
+        {
+            potenciadores[i].SetActive(false); 
+}
+        float probabilidadRandom = Random.Range(0f, 100f);
+        if (probabilidadRandom <= probabilidadMinima)
+        {
+            int itemRandomIndex = Random.Range(0, potenciadores.Length);
+            potenciadores[itemRandomIndex].SetActive(true); 
+}
     }
 
     private void obtenerDiamantes()
