@@ -1691,9 +1691,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8905616191281804487}
+  - component: {fileID: -4942417481413473354}
+  - component: {fileID: -4955413431815017105}
   m_Layer: 0
   m_Name: Facil2
-  m_TagString: Untagged
+  m_TagString: Bloque
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1731,8 +1733,50 @@ Transform:
   - {fileID: 747986312639321661}
   - {fileID: 8039683109867458856}
   - {fileID: 400000}
+  - {fileID: 5957645185729764196}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4942417481413473354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024785564870936287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53ddad49c999a74aabdc9426fa79437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoBloque: 0
+  ObjEspeciales: []
+  diamantes:
+  - {fileID: 1781357800288346241}
+  - {fileID: 870686372436067258}
+  - {fileID: 4579781299219228527}
+  probabilidadMinima: 0
+  potenciadores: []
+--- !u!65 &-4955413431815017105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024785564870936287}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40.237053, y: 19.68475, z: 40.50522}
+  m_Center: {x: 0.01651001, y: 6.656208, z: -0.039794922}
 --- !u!1 &1113478690445512343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,6 +2607,40 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1419379611622596562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5957645185729764196}
+  m_Layer: 0
+  m_Name: Diamantes2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5957645185729764196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419379611622596562}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.2773104, y: -4.1985607, z: 8.021767}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3801392376648742380}
+  - {fileID: 6640177133555931450}
+  - {fileID: 1487560236242117866}
+  m_Father: {fileID: 8905616191281804487}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1433302679220370569
 GameObject:
   m_ObjectHideFlags: 0
@@ -3405,7 +3483,7 @@ GameObject:
   - component: {fileID: 4482958895562429936}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_low_G06
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3464,8 +3542,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 16.491594, y: 1, z: 1}
+  m_Center: {x: -6.082784, y: 0, z: 0}
 --- !u!1 &1831942715292344996
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,7 +3887,7 @@ GameObject:
   - component: {fileID: 1206715487858783421}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_01_URP (1)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4008,7 +4086,7 @@ GameObject:
   - component: {fileID: 5682365163088323643}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_low_G06 (2)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4067,8 +4145,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 7.0140777, y: 1, z: 1}
+  m_Center: {x: -1.6909243, y: 0, z: 0}
 --- !u!1 &2140207136818993092
 GameObject:
   m_ObjectHideFlags: 0
@@ -4164,7 +4242,7 @@ GameObject:
   - component: {fileID: 4102257707434412689}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_low_G06
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4223,8 +4301,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 11.96519, y: 1, z: 1}
+  m_Center: {x: -4.134884, y: 0, z: 0}
 --- !u!1 &2219437090563910178
 GameObject:
   m_ObjectHideFlags: 0
@@ -4319,7 +4397,7 @@ GameObject:
   - component: {fileID: 1476289187810878890}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_01_URP (5)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4601,7 +4679,7 @@ GameObject:
   - component: {fileID: 8429178416715066598}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_low_G06
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4673,7 +4751,7 @@ GameObject:
   - component: {fileID: 2984334994001016094}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_01_URP (4)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5039,7 +5117,7 @@ GameObject:
   - component: {fileID: 3399080677952973569}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_low_G06
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5098,8 +5176,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.1655793, y: 1, z: 1}
+  m_Center: {x: 0.093660556, y: 0, z: 0}
 --- !u!1 &2669728269799744569
 GameObject:
   m_ObjectHideFlags: 0
@@ -5714,7 +5792,7 @@ GameObject:
   - component: {fileID: 3222334040058506426}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_01_URP (2)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7076,7 +7154,7 @@ GameObject:
   - component: {fileID: 4299294048454208589}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_01_URP (7)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7109,7 +7187,7 @@ GameObject:
   - component: {fileID: 3578093598670790028}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_low_G06
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8012,7 +8090,7 @@ GameObject:
   - component: {fileID: 2123957187395859276}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_low_G06 (1)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9412,7 +9490,7 @@ GameObject:
   - component: {fileID: 5621107785431336054}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_01_URP (6)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10109,7 +10187,7 @@ GameObject:
   - component: {fileID: 7241531765371517069}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_low_G06
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13611,7 +13689,7 @@ GameObject:
   - component: {fileID: 5121536096071468556}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_low_G06 (1)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16278,7 +16356,7 @@ GameObject:
   - component: {fileID: 8828656829439113238}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_01_URP (3)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16394,7 +16472,7 @@ GameObject:
   - component: {fileID: 6903970896065418737}
   m_Layer: 0
   m_Name: volcanic_rocks_L2_low_G06
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18779,3 +18857,243 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1594358517065024527
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5957645185729764196}
+    m_Modifications:
+    - target: {fileID: 1888415873188022197, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_Name
+      value: DiamantesLinea
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1985607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.651764
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bdfd3628f08b6084dbad7e6f6d806f1a, type: 3}
+--- !u!1 &870686372436067258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1888415873188022197, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1594358517065024527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6640177133555931450 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1594358517065024527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8004944640633347353
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5957645185729764196}
+    m_Modifications:
+    - target: {fileID: 5807919960331025014, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_Name
+      value: DiamantesLineaCorta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1985598
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.8182297
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd3bcd15dbc7f65468aba18ed86b1d29, type: 3}
+--- !u!4 &1487560236242117866 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+    type: 3}
+  m_PrefabInstance: {fileID: 8004944640633347353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4579781299219228527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5807919960331025014, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+    type: 3}
+  m_PrefabInstance: {fileID: 8004944640633347353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8326336678539140545
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5957645185729764196}
+    m_Modifications:
+    - target: {fileID: 5137574879216216109, guid: df07f95b6f821144d85ba0fc56fe682b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137574879216216109, guid: df07f95b6f821144d85ba0fc56fe682b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6185608
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137574879216216109, guid: df07f95b6f821144d85ba0fc56fe682b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.341766
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137574879216216109, guid: df07f95b6f821144d85ba0fc56fe682b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137574879216216109, guid: df07f95b6f821144d85ba0fc56fe682b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137574879216216109, guid: df07f95b6f821144d85ba0fc56fe682b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137574879216216109, guid: df07f95b6f821144d85ba0fc56fe682b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137574879216216109, guid: df07f95b6f821144d85ba0fc56fe682b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137574879216216109, guid: df07f95b6f821144d85ba0fc56fe682b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137574879216216109, guid: df07f95b6f821144d85ba0fc56fe682b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725274675553467712, guid: df07f95b6f821144d85ba0fc56fe682b,
+        type: 3}
+      propertyPath: m_Name
+      value: Diamantes_Salto
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df07f95b6f821144d85ba0fc56fe682b, type: 3}
+--- !u!1 &1781357800288346241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7725274675553467712, guid: df07f95b6f821144d85ba0fc56fe682b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8326336678539140545}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3801392376648742380 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5137574879216216109, guid: df07f95b6f821144d85ba0fc56fe682b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8326336678539140545}
+  m_PrefabAsset: {fileID: 0}

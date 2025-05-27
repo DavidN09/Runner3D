@@ -1,5 +1,39 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &695457741104168511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5692818088508744448}
+  m_Layer: 0
+  m_Name: Diamantes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5692818088508744448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695457741104168511}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1269255, y: -4.415071, z: -8.245007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3647758195763822895}
+  - {fileID: 3010505347229913930}
+  - {fileID: 6698912382162766578}
+  m_Father: {fileID: 2291691986857693060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4823630626508401128
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,9 +43,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2291691986857693060}
+  - component: {fileID: 2168361956621285789}
+  - component: {fileID: -7175631523807436456}
   m_Layer: 0
   m_Name: Facil1
-  m_TagString: Untagged
+  m_TagString: Bloque
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,8 +82,50 @@ Transform:
   - {fileID: 3181696127061208511}
   - {fileID: 3991205305476052}
   - {fileID: 8645771987201240927}
+  - {fileID: 5692818088508744448}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2168361956621285789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4823630626508401128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53ddad49c999a74aabdc9426fa79437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoBloque: 0
+  ObjEspeciales: []
+  diamantes:
+  - {fileID: 1852446420490027690}
+  - {fileID: 210877934884933839}
+  - {fileID: 920062666113912946}
+  probabilidadMinima: 0
+  potenciadores: []
+--- !u!65 &-7175631523807436456
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4823630626508401128}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40.237053, y: 19.68475, z: 40.50522}
+  m_Center: {x: 0.01651001, y: 6.656208, z: -0.039794922}
 --- !u!1001 &3991205305350484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -392,10 +470,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3272777121557236271, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
         type: 3}
       propertyPath: m_Name
       value: volcanic_rocks_L2_01_URP (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -412,6 +500,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2654586149266232393, guid: 60344d3811152f34a8f82e3b007c2cc6,
     type: 3}
   m_PrefabInstance: {fileID: 1020562050966394106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1653305011524163527
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5692818088508744448}
+    m_Modifications:
+    - target: {fileID: 1888415873188022197, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_Name
+      value: DiamantesLinea
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.415073
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.428032
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bdfd3628f08b6084dbad7e6f6d806f1a, type: 3}
+--- !u!1 &920062666113912946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1888415873188022197, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1653305011524163527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6698912382162766578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5334207494250192181, guid: bdfd3628f08b6084dbad7e6f6d806f1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1653305011524163527}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1971017260463463700
 PrefabInstance:
@@ -516,10 +684,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3272777121557236271, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
         type: 3}
       propertyPath: m_Name
       value: volcanic_rocks_L2_01_URP (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -791,10 +969,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3272777121557236271, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
         type: 3}
       propertyPath: m_Name
       value: volcanic_rocks_L2_01_URP (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1164,10 +1352,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3272777121557236271, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
         type: 3}
       propertyPath: m_Name
       value: volcanic_rocks_L2_01_URP (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1267,6 +1465,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9e20ab261cbee2040be9c0334a35053f,
     type: 3}
   m_PrefabInstance: {fileID: 4823864577399622882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5272824949230205148
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5692818088508744448}
+    m_Modifications:
+    - target: {fileID: 5807919960331025014, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_Name
+      value: DiamantesLineaCorta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.415071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7979736
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd3bcd15dbc7f65468aba18ed86b1d29, type: 3}
+--- !u!1 &1852446420490027690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5807919960331025014, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+    type: 3}
+  m_PrefabInstance: {fileID: 5272824949230205148}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3647758195763822895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+    type: 3}
+  m_PrefabInstance: {fileID: 5272824949230205148}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5401499207329993152
 PrefabInstance:
@@ -1371,10 +1649,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3272777121557236271, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
         type: 3}
       propertyPath: m_Name
       value: volcanic_rocks_L2_01_URP (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1495,10 +1783,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3272777121557236271, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
         type: 3}
       propertyPath: m_Name
       value: volcanic_rocks_L2_01_URP (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1515,6 +1813,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2654586149266232393, guid: 60344d3811152f34a8f82e3b007c2cc6,
     type: 3}
   m_PrefabInstance: {fileID: 5935465320065901208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5941602729773673145
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5692818088508744448}
+    m_Modifications:
+    - target: {fileID: 5807919960331025014, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_Name
+      value: DiamantesLineaCorta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.415071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.861385
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd3bcd15dbc7f65468aba18ed86b1d29, type: 3}
+--- !u!1 &210877934884933839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5807919960331025014, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+    type: 3}
+  m_PrefabInstance: {fileID: 5941602729773673145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3010505347229913930 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8913651269204916723, guid: cd3bcd15dbc7f65468aba18ed86b1d29,
+    type: 3}
+  m_PrefabInstance: {fileID: 5941602729773673145}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6249722933392296643
 PrefabInstance:
@@ -1619,10 +1997,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3272777121557236271, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
         type: 3}
       propertyPath: m_Name
       value: volcanic_rocks_L2_01_URP (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
