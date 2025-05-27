@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
 
-    [SerializeField] private int diamantesNecesarios = 100;
+    [SerializeField] private int puntajeNecesario = 1000;
     [SerializeField] private string siguienteNivel;
 
     [Header("Config")]
@@ -86,7 +86,7 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.Instancia.DiamantesObtenidosEnEsteNivel >= diamantesNecesarios)
+        if (GameManager.Instancia.Puntaje >= puntajeNecesario)
         {
             CambiarNivel();
         }

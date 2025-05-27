@@ -1900,7 +1900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28ed421ca8659d144a858468ae12b0f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diamantesNecesarios: 50
+  puntajeNecesario: 500
   siguienteNivel: SceneJungle
   bloquesAlInicio: 5
   maxBloquesParaDificil: 5
