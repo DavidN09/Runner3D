@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [System.Serializable]
-public class DatosNivel : MonoBehaviour
+public class DatosNivel
 {
     public int numeroNivel;
     public int diamantes;
