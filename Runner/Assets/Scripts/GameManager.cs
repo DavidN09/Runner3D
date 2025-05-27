@@ -14,6 +14,11 @@ public enum EstadosDelJuego
 public class GameManager : Singletton<GameManager>
 {
 
+    public List<DatosNivel> resultadosPorNivel = new List<DatosNivel>();
+
+    public int DiamantesTotales { get; private set; }
+    public int PuntajeTotal { get; private set; }
+
     public static event Action EventoImanFinalizado;
 
     [SerializeField] private int velocidadMundo = 5;
@@ -25,8 +30,11 @@ public class GameManager : Singletton<GameManager>
 
     public EstadosDelJuego EstadoActual { get; set; }
     public int DiamantesObtenidosEnEsteNivel { get; set; }
+    public int NivelActual { get; set; } = 1;
 
     private float distanciaRecorrida;
+
+
 
     private void Start()
     {
@@ -47,6 +55,23 @@ public class GameManager : Singletton<GameManager>
         distanciaRecorrida += Time.deltaTime * velocidadMundo * valorMultiplicador;  
     }
 
+    public void SumarProgresoDelNivel()
+    {
+        int puntajeNivel = Puntaje;
+        int diamantesNivel = DiamantesObtenidosEnEsteNivel;
+
+        PuntajeTotal += puntajeNivel;
+        DiamantesTotales += diamantesNivel;
+
+        resultadosPorNivel.Add(new DatosNivel(NivelActual, diamantesNivel, puntajeNivel));
+        NivelActual++;
+    }
+
+    public void ReiniciarNivelActual()
+    {
+        DiamantesObtenidosEnEsteNivel = 0;
+        distanciaRecorrida = 0;
+    }
 
     public void CambiarEstado(EstadosDelJuego nuevoEstado)
     {

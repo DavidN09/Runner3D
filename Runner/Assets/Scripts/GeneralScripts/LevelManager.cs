@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+
+    [SerializeField] private int diamantesNecesarios = 100;
+    [SerializeField] private string siguienteNivel;
+
     [Header("Config")]
     [SerializeField] private int bloquesAlInicio = 5;
     [SerializeField] private int maxBloquesParaDificil = 5;
@@ -13,7 +18,7 @@ public class LevelManager : MonoBehaviour
     [Header("Bloques")]
     [SerializeField] private Bloque bloqueInicial;
     [SerializeField] private int longitudBloqueNormal = 40;
-    [SerializeField] private int longitudBloqueEspecial = 80;
+    [SerializeField] private int longitudBloqueEspecial = 80;   
     [SerializeField] private Bloque[] bloquesPrefab;
 
     private List<Bloque> listaBloquesFaciles = new List<Bloque>();
@@ -31,6 +36,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        GameManager.Instancia.ReiniciarNivelActual();
         LLenarBloquesSegunTipo();
         ultimoBloque = bloqueInicial;
 
@@ -80,12 +86,22 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instancia.DiamantesObtenidosEnEsteNivel >= diamantesNecesarios)
+        {
+            CambiarNivel();
+        }
+
         if (Input.GetKeyDown(KeyCode.G))
         {
             CrearBloque();
         }
     }
 
+    private void CambiarNivel()
+    {
+        GameManager.Instancia.SumarProgresoDelNivel();
+        SceneManager.LoadScene(siguienteNivel);
+    }
 
     private void AñadirBloque(TipoBloque tipo, float longitud)
     {
