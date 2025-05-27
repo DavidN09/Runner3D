@@ -12,15 +12,36 @@ public enum EstadosDelJuego
 
 public class GameManager : Singletton<GameManager>
 {
-   
-    public EstadosDelJuego EstadoActual { get; set; }
 
+    [SerializeField] private int velocidadMundo = 5;
+    [SerializeField] private int multiplicadorPuntajePorMoneda = 10;
+
+    public int Puntaje => (int) distanciaRecorrida + DiamantesObtenidosEnEsteNivel * multiplicadorPuntajePorMoneda;
+
+    public float valorMultiplicador { get; set; }     
+
+    public EstadosDelJuego EstadoActual { get; set; }
+    public int DiamantesObtenidosEnEsteNivel { get; set; }
+
+    private float distanciaRecorrida;
+
+    private void Start()
+    {
+        valorMultiplicador = 1f;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             CambiarEstado(EstadosDelJuego.Jugando);
         }
+
+        if (EstadoActual == EstadosDelJuego.Inicio || EstadoActual == EstadosDelJuego.GameOver)
+        {
+            return;
+        }
+
+        distanciaRecorrida += Time.deltaTime * velocidadMundo * valorMultiplicador;  
     }
 
 
@@ -32,4 +53,14 @@ public class GameManager : Singletton<GameManager>
         }
     } 
 
+    public void iniciarConteoMultiplicador(float tiempo)
+    {
+        StartCoroutine(COMultiplicadorConteo(tiempo));
+    }
+
+    private IEnumerator COMultiplicadorConteo(float tiempo)
+    {
+        yield return new WaitForSeconds(tiempo);
+        valorMultiplicador = 1;
+    }
 }
