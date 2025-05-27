@@ -108,6 +108,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: volcanic_rocks_L2_01_URP
       objectReference: {fileID: 0}
+    - target: {fileID: 3430947579886554867, guid: 60344d3811152f34a8f82e3b007c2cc6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5555758988484020300, guid: 60344d3811152f34a8f82e3b007c2cc6, type: 3}
@@ -1095,6 +1100,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloqueInicio
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 561efd4f0152e444baaae84fe28de149,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bloque
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
